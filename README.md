@@ -1,0 +1,2 @@
+# Customer-Churn-and-CLV-Prediction-for-E-commerce-Retail
+An end-to-end customer analytics platform for non-contractual retail settings. Features an RFM feature engineering pipeline, an XGBoost &amp; Logistic Regression churn predictor, probabilistic CLV modeling, and a FastAPI middleware layer serving an interactive multi-page Streamlit dashboard. Deployed for BS Thesis in Computer Science at UNYT.
