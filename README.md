@@ -28,28 +28,31 @@ Unlike subscription-based services, non-contractual retail environments suffer f
 * **Self-Upload Suite:** Allows external companies to drop a transactional CSV file directly into memory for real-time model forecasting without data persistence.
 
 
-Structure of the roject:
+##  Repository Structure
+
+```text
 ├── data/
-│   ├── online_retail_I.xlsx        # Raw transactional records for 2010-2011 [cite: 443]
-│   └── online_retail_II.xlsx       # Raw transactional records for 2009-2010 [cite: 443]
+│   ├── online_retail_I.xlsx        # Raw transactional records for 2010-2011
+│   └── online_retail_II.xlsx       # Raw transactional records for 2009-2010
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb   # Data quality assessment & exploration [cite: 443]
-│   └── 02_full_analysis.ipynb      # RFM engineering, ML model training, & CLV pipeline [cite: 443]
+│   ├── 01_data_exploration.ipynb   # Data quality assessment & exploration
+│   └── 02_full_analysis.ipynb      # RFM engineering, ML model training, & CLV pipeline
 ├── models/
-│   ├── churn_model.pkl             # Serialized Logistic Regression prediction model [cite: 443]
-│   └── scaler.pkl                  # Serialized StandardScaler object [cite: 443]
+│   ├── churn_model.pkl             # Serialized Logistic Regression prediction model
+│   └── scaler.pkl                  # Serialized StandardScaler object
 ├── reports/
-│   ├── churn_distribution.png      # Active vs Churned distribution bar chart [cite: 443]
-│   ├── customer_segments.png       # 5-Tier RFM customer segmentation distribution [cite: 443]
-│   ├── feature_importance.png      # XGBoost feature attribution chart [cite: 443]
-│   ├── model_comparison.png        # AUC-ROC curve comparing LR, RF, and XGBoost [cite: 443]
-│   ├── model_evaluation.png        # Best model's confusion matrix & ROC curve [cite: 443]
-│   └── year_comparison.csv         # Exported Year-on-Year performance summary 
+│   ├── churn_distribution.png      # Active vs Churned distribution bar chart
+│   ├── customer_segments.png       # 5-Tier RFM customer segmentation distribution
+│   ├── feature_importance.png      # XGBoost feature attribution chart
+│   ├── model_comparison.png        # AUC-ROC curve comparing LR, RF, and XGBoost
+│   ├── model_evaluation.png        # Best model's confusion matrix & ROC curve
+│   └── year_comparison.csv         # Exported Year-on-Year performance summary
 ├── app/
-│   ├── main.py                     # Streamlit multi-page entry point (Welcome Page) [cite: 444]
+│   ├── main.py                     # Streamlit multi-page entry point (Welcome Page)
 │   └── pages/
-│       ├── 1_Dashboard.py          # Primary interactive analytics dashboard page [cite: 444]
-│       └── 2_Company_Analysis.py   # External business data CSV upload engine [cite: 444]
-├── api.py                          # FastAPI REST API application script [cite: 444]
+│       ├── 1_Dashboard.py          # Primary interactive analytics dashboard page
+│       └── 2_Company_Analysis.py   # External business data CSV upload engine
+├── api.py                          # FastAPI REST API application script
 ├── requirements.txt                # System package dependency registry (pandas, fastapi, etc.)
+└── README.md                       # Comprehensive setup guide and repository abstracttapi, etc.)
 └── README.md                       # Comprehensive setup guide and repository abstract
