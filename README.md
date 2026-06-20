@@ -55,7 +55,7 @@ Unlike subscription-based services, non-contractual retail environments suffer f
 └── README.md                       # Comprehensive setup guide and repository abstract
 
 ## Step 1: at the anaconda prompt inside of bash:
-               cd C:\Users\suada\Desktop\graduation_project
+               cd C:\Users\Desktop\graduation_project
                python -m uvicorn api:app --reload
-## Step 2: cd C:\Users\suada\Desktop\graduation_project\app
+## Step 2: cd C:\Users\Desktop\graduation_project\app
              python -m streamlit run main.py
