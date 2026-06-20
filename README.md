@@ -53,3 +53,9 @@ Unlike subscription-based services, non-contractual retail environments suffer f
 ├── requirements.txt                # System package dependency registry (pandas, fastapi, etc.)
 └── README.md                       # Comprehensive setup guide and repository abstracttapi, etc.)
 └── README.md                       # Comprehensive setup guide and repository abstract
+
+## Step 1: at the anaconda prompt inside of bash:
+               cd C:\Users\suada\Desktop\graduation_project
+               python -m uvicorn api:app --reload
+## Step 2: cd C:\Users\suada\Desktop\graduation_project\app
+             python -m streamlit run main.py
