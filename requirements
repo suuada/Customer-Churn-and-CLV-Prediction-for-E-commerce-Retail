@@ -10,7 +10,7 @@ google-generativeai
 lifetimes
 requests
 
-##Core data science libraries:
+Core data science libraries:
 
 pandas — for loading, cleaning and manipulating the dataset
 numpy — for numerical calculations
@@ -18,27 +18,27 @@ matplotlib — for creating charts and plots
 seaborn — for nicer statistical visualizations
 openpyxl — for reading the Excel dataset files
 
-##Machine learning:
+Machine learning:
 
 scikit-learn — for Logistic Regression, Random Forest, StandardScaler, and model evaluation metrics
 xgboost — for the XGBoost classifier
 joblib — for saving and loading the trained model
 
-##CLV modeling:
+CLV modeling:
 
 lifetimes — for the BG/NBD and Gamma-Gamma probabilistic models
 
-##Dashboard:
+Dashboard:
 
 streamlit — for the interactive web dashboard
 
-##API:
+API:
 
 fastapi — for building the REST API
 uvicorn — the server that runs the FastAPI application
 requests — for the dashboard to call the API
 
-##Development environment:
+Development environment:
 
 jupyter — for the interactive notebooks where all analysis was done
 anaconda — the Python distribution that managed everything
